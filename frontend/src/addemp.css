@@ -1,0 +1,15 @@
+.register{
+    height: 100vh;
+    width: 100%;
+    border-left: 10px solid #e9e8e8;
+}
+.addemployee{
+    width: 600px;
+    margin-left: 100px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 20px;
+    color: gray;
+}
