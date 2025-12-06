@@ -23,7 +23,7 @@ export default function Addemployee() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/dashboard/newemployee", {
+      const response = await fetch("https://ems-jq46.onrender.com/dashboard/newemployee", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
