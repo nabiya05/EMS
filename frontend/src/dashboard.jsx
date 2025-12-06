@@ -10,7 +10,7 @@ export default function Dashboard(){
 
     const getallemployees = async(req,res)=>{
         try{
-           const response = await fetch("http://localhost:4000/dashboard");
+           const response = await fetch("https://ems-jq46.onrender.com/dashboard");
            const result= await response.json();
            setAllemployee(result);
         }catch(err){
