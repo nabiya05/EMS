@@ -16,7 +16,7 @@ export default function EditEmployee() {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const res = await fetch(`http://localhost:4000/dashboard/${id}`);
+        const res = await fetch(`https://ems-jq46.onrender.com/dashboard/${id}`);
         const data = await res.json();
         setFormdata({
           name: data.name || "",
@@ -47,7 +47,7 @@ export default function EditEmployee() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:4000/dashboard/${id}`, {
+      const res = await fetch(`https://ems-jq46.onrender.com/dashboard/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formdata)
