@@ -9,7 +9,7 @@ export default function Employee(){
 
     const getallemployees = async(req,res)=>{
         try{
-           const response = await fetch("http://localhost:4000/dashboard/employees");
+           const response = await fetch("https://ems-jq46.onrender.com/dashboard/employees");
            const result= await response.json();
            setAllemployee(result);
         }catch(err){
@@ -24,7 +24,7 @@ export default function Employee(){
 
     const handledelete =async(deletedemployee)=>{
         try{
-           const response = await fetch(`http://localhost:4000/dashboard/${deletedemployee}`,{method:"DELETE"});
+           const response = await fetch(`https://ems-jq46.onrender.com/dashboard/${deletedemployee}`,{method:"DELETE"});
            const result= await response.json();
            console.log(result);
            setAllemployee(prev => prev.filter(employee => employee._id !== deletedemployee ));
